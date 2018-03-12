@@ -1,7 +1,7 @@
-package ru.geekbrains.stargame.engine.JSONEngine.description;
+package ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.description;
 
 /**
- * Created by sol on 3/7/18.
+ * @author Shuttle on 3/7/18.
  */
 
 public class Client {

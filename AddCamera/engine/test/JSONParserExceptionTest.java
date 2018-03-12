@@ -1,14 +1,14 @@
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
 
-import ru.geekbrains.stargame.engine.JSONEngine.client.JSONParser;
-import ru.geekbrains.stargame.engine.JSONEngine.description.Client;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.client.JSONParser;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.description.Client;
 
 /**
- * Created by sol on 3/11/18.
+ * @author Shuttle on 3/12/18.
  */
+
 
 public class JSONParserExceptionTest {
     JSONParser jsonParser = new JSONParser();

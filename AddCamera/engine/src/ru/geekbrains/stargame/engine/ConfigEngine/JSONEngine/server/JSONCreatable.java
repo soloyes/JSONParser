@@ -1,13 +1,15 @@
-package ru.geekbrains.stargame.engine.JSONEngine.server;
+package ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.server;
 
-import ru.geekbrains.stargame.engine.JSONEngine.description.Media;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.description.Media;
 
 /**
- * Created by @author Shuttle on 3/7/18.
+ * @author Shuttle on 3/7/18.
  *
  * Interface that allows to create client config on server side.
- * Assume, that only base class {@link JSONCreateBase) may implement it.
- * Therefore we must extends some base class, and here we have only {@link JSONCreateBase)
+ * Assume, that only base class may implement it.
+ * Therefore, we must extends some base class in future.
+ * Now, here we have only {@link JSONCreateBase).
+ *
  * {@link #set(Media)} - method using for invoking all other methods, like:
  *
  * public void set(Media media) {
@@ -18,7 +20,7 @@ import ru.geekbrains.stargame.engine.JSONEngine.description.Media;
  *  setWorlds(media);
  *  }
  *
- *  Below methods invoking for call corresponding setters from Media class:
+ *  Below are methods invoking for calling corresponding setters from Media class:
  *
  * {@link #setAdvertising(Media)} - just call setAdvertising insight {@link Media}
  * {@link #setFolderTree(Media)} - just call setFolderTree insight {@link Media}

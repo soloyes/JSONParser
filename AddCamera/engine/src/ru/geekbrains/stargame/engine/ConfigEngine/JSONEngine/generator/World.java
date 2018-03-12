@@ -1,9 +1,9 @@
-package ru.geekbrains.stargame.engine.JSONEngine.generator;
+package ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator;
 
 import java.util.Map;
 
 /**
- * Created by sol on 3/7/18.
+ * @author Shuttle on 3/7/18.
  */
 
 public class World extends Base{

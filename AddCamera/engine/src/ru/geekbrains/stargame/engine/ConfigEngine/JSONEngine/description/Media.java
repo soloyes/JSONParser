@@ -1,12 +1,15 @@
-package ru.geekbrains.stargame.engine.JSONEngine.description;
+package ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.description;
 
-import ru.geekbrains.stargame.engine.JSONEngine.generator.Advertising;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.Menu;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.Notification;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.World;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.Advertising;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.Menu;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.Notification;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.World;
 
 /**
- * Created by sol on 3/7/18.
+ * @author Shuttle on 3/7/18.
+ *
+ * Media is base container of all other configuration data. If we need to extend some, just out it here,
+ * but not forget about {@link ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator} package.
  */
 
 public class Media {
@@ -45,4 +48,7 @@ public class Media {
     public void setNotifications(Notification[] notifications) { this.notifications = notifications; }
 
     public void setAdvertise(Advertising[] advertise) { this.advertise = advertise; }
+
+    public Media() {
+    }
 }

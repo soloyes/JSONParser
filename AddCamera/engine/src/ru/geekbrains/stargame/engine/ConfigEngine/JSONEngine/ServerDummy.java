@@ -1,16 +1,16 @@
-package ru.geekbrains.stargame.engine.JSONEngine;
+package ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import ru.geekbrains.stargame.engine.JSONEngine.generator.Advertising;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.Menu;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.Notification;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.World;
-import ru.geekbrains.stargame.engine.JSONEngine.server.JSONCreateBase;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.Advertising;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.Menu;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.Notification;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.World;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.server.JSONCreateBase;
 
 /**
- * Created by sol on 3/7/18.
+ * @author Shuttle on 3/7/18.
  */
 
 public class ServerDummy extends JSONCreateBase {
@@ -31,7 +31,7 @@ public class ServerDummy extends JSONCreateBase {
     public String[] setFolderTree() {
         Map<String, String> font = new HashMap<String, String>();
         font.put("fonts/font.fnt", "fonts/font.png");
-        return new String[]{"fonts, atlases, textures, music, sounds"};
+        return new String[]{"fonts", "atlases", "textures", "music", "sounds"};
     }
 
     @Override

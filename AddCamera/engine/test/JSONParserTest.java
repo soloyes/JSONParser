@@ -1,6 +1,5 @@
 import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,12 +10,13 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
 
-import ru.geekbrains.stargame.engine.JSONEngine.client.JSONParser;
-import ru.geekbrains.stargame.engine.JSONEngine.description.Client;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.client.JSONParser;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.description.Client;
 
 /**
- * Created by sol on 3/6/18.
+ * @author Shuttle on 3/12/18.
  */
+
 
 @RunWith(Parameterized.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

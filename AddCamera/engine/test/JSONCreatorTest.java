@@ -9,13 +9,16 @@ import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.server.JSONCreator;
  * @author Shuttle on 3/12/18.
  */
 
-
-public class JSONCreatorExceptionTest {
+public class JSONCreatorTest {
     private JSONCreator jsonCreator = new JSONCreator();
     private ServerDummy dummy = new ServerDummy();
 
-    @Test(expected = IOException.class)
-    public void test() throws IOException{
-        jsonCreator.createConfig(dummy, "blah-bla-h/config.json");
+    @Test
+    public void test(){
+        try {
+            jsonCreator.createConfig(dummy, "config.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

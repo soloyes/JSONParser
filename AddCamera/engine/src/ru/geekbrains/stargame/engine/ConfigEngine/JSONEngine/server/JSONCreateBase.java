@@ -1,17 +1,17 @@
-package ru.geekbrains.stargame.engine.JSONEngine.server;
+package ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.server;
 
-import ru.geekbrains.stargame.engine.JSONEngine.description.Media;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.Advertising;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.Menu;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.Notification;
-import ru.geekbrains.stargame.engine.JSONEngine.generator.World;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.description.Media;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.Advertising;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.Menu;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.Notification;
+import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.World;
 
 /**
- * Created by @author Shuttle on 3/10/18.
+ * @author Shuttle on 3/7/18.
  *
  * Base class implementing {@link JSONCreatable} interface.
  *
- * Follow methods invoke corresponding {@link Media} setters:
+ * Follow methods are invoking corresponding {@link Media} setters:
  *
  * {@link #setAdvertising(Media)}
  * {@link #setFolderTree(Media)}
@@ -28,7 +28,7 @@ import ru.geekbrains.stargame.engine.JSONEngine.generator.World;
  * {@link String[] #setFolderTree()}
  *
  * HowTo use base class?
- * Extend this class, then override methods, returning arrays with needed data:
+ * Extend this class, then override methods, returning arrays with needed data. Example:
  *
  *  @Override
  *      public Advertising[] setAdvertising() {
@@ -42,7 +42,8 @@ import ru.geekbrains.stargame.engine.JSONEngine.generator.World;
  *          new String[]{"music/menu.ogg"},
  *          new String[]{"sounds/menu.ogg"})};
  *      }
- *  Better way check {@link ru.geekbrains.stargame.engine.JSONEngine.ServerDummy} as example.
+ *
+ *  Better way is check {@link ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.ServerDummy} as example.
  */
 
 public abstract class JSONCreateBase implements JSONCreatable{

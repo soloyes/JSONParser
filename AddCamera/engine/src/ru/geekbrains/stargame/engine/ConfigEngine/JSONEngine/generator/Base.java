@@ -1,9 +1,16 @@
-package ru.geekbrains.stargame.engine.JSONEngine.generator;
+package ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator;
 
 import java.util.Map;
 
 /**
- * Created by sol on 3/7/18.
+ * @author Shuttle on 3/7/18.
+ *
+ * Base class for other structures from {@link ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator} package.
+ *
+ * This class store base data, getters and setters which need to be operated by 'Jackson' library.
+ *
+ * To add something new - just extend from it, but not forget about changes in
+ * {@link ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.description.Media} class
  */
 
 public abstract class Base {

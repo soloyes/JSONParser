@@ -1,5 +1,4 @@
-import org.junit.Assert;
-import org.junit.Test;
+package ru.geekbrains.stargame.engine.ConfigEngine.MediaEngine;
 
 import java.io.IOException;
 
@@ -10,14 +9,10 @@ import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.description.Client;
  * @author Shuttle on 3/12/18.
  */
 
-
-public class JSONParserNULLTest {
-    private JSONParser jsonParser = new JSONParser();
-    private Client client;
-
-    @Test
-    public void test() throws IOException{
+public class ClientDummy {
+    private Client client = null;
+    ClientDummy() throws IOException{
+        JSONParser jsonParser = new JSONParser();
         client = jsonParser.parseConfig("config.json");
-        Assert.assertNotNull(client);
     }
 }

@@ -9,8 +9,9 @@ import org.junit.BeforeClass;
 import org.mockito.Mockito;
 
 /**
- * Created by sol on 3/6/18.
+ * @author Shuttle on 3/12/18.
  */
+
 
 public class BaseTest {
     // This is our "JSONParserTest" application
