@@ -45,7 +45,7 @@ public class JSONParserTest {
         Object[][] objects = new Object[][]{
                 {client.getMedia().getAdvertise()[0].getAtlas()[0], "atlases/mainAtlas.atlas"},
                 {client.getMedia().getAdvertise()[0].getTexture()[0], "textures/texture.png"},
-                {client.getMedia().getAdvertise()[0].getFont().get("fonts/font.fnt"), "fonts/font.png"},
+                {client.getMedia().getAdvertise()[0].getFont()[0], "fonts/font.fnt"},
                 {client.getMedia().getAdvertise()[0].getName(), "Advertise1"},
                 {client.getMedia().getAdvertise()[0].getMusic()[0], "music/menu.ogg"},
                 {client.getMedia().getAdvertise()[0].getSound()[0], "sounds/menu.ogg"}

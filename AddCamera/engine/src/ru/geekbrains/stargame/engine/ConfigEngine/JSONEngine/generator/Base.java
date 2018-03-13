@@ -1,7 +1,5 @@
 package ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator;
 
-import java.util.Map;
-
 /**
  * @author Shuttle on 3/7/18.
  *
@@ -17,7 +15,7 @@ public abstract class Base {
     protected String name;
     protected String[] atlas;
     protected String[] texture;
-    protected Map<String, String> font;
+    protected String[] font;
     protected String[] music;
     protected String[] sound;
 
@@ -35,7 +33,7 @@ public abstract class Base {
         return texture;
     }
 
-    public Map<String, String> getFont() {
+    public String[] getFont() {
         return font;
     }
 
@@ -47,7 +45,7 @@ public abstract class Base {
         return sound;
     }
 
-    public Base(String name, String[] atlas, String[] texture, Map<String, String> font, String[] music, String[] sound) {
+    public Base(String name, String[] atlas, String[] texture, String[] font, String[] music, String[] sound) {
         this.name = name;
         this.atlas = atlas;
         this.texture = texture;

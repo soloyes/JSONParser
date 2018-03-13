@@ -11,7 +11,7 @@ public class Advertising extends Base {
         super();
     }
 
-    public Advertising(String name, String[] atlas, String[] texture, Map<String, String> font, String[] music, String[] sound) {
+    public Advertising(String name, String[] atlas, String[] texture, String[] font, String[] music, String[] sound) {
        super(name, atlas, texture, font, music, sound);
     }
 }

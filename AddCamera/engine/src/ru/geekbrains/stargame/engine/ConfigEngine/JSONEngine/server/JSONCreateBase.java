@@ -32,15 +32,13 @@ import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.generator.World;
  *
  *  @Override
  *      public Advertising[] setAdvertising() {
- *          Map<String, String> font = new HashMap<String, String>();
- *          font.put("fonts/font.fnt", "fonts/font.png");
  *          return new Advertising[]{
- *          new Advertising("Advertise1",
- *          new String[]{"atlases/mainAtlas.atlas"},
- *          new String[]{"textures/texture.png"},
- *          font,
- *          new String[]{"music/menu.ogg"},
- *          new String[]{"sounds/menu.ogg"})};
+ *              new Advertising("Advertise1",
+ *              new String[]{"atlases/mainAtlas.atlas"},
+ *              new String[]{"textures/texture.png"},
+ *              new String[]{"fonts/font.fnt"},
+ *              new String[]{"music/menu.ogg"},
+ *              new String[]{"sounds/menu.ogg"})};
  *      }
  *
  *  Better way is check {@link ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.ServerDummy} as example.
