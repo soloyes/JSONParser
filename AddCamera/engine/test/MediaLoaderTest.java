@@ -1,5 +1,3 @@
-import com.badlogic.gdx.Gdx;
-
 import org.junit.Test;
 
 import ru.geekbrains.stargame.engine.ConfigEngine.JSONEngine.client.JSONParser;
@@ -21,6 +19,10 @@ public class MediaLoaderTest extends BaseTest{
         MediaLoader mediaLoader = new MediaLoader(client);
         Base[] advertisings = client.getMedia().getAdvertise();
         mediaLoader.load(advertisings);
-        mediaLoader.getAssetManager().toString();
+        mediaLoader.getAssetManager().finishLoading();
+
+        System.out.println(mediaLoader.getAssetManager().getAssetNames());
+        mediaLoader.getAssetManager().dispose();
+
     }
 }
